@@ -1,0 +1,35 @@
+{
+  "name": "sails-aaf-rapid-connect",
+  "version": "0.0.1",
+  "description": "Provides AAF Rapid Connect implementation to your Sails.js application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shilob/sails-aaf-rapid-connect.git"
+  },
+  "keywords": [
+    "sails",
+    "aaf",
+    "rapid",
+    "connect"
+  ],
+  "author": "Shilo Banihit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shilob/sails-aaf-rapid-connect/issues"
+  },
+  "homepage": "https://github.com/shilob/sails-aaf-rapid-connect",
+  "sails": {
+    "isHook": true
+  },
+  "devDependencies": {
+    "sails": "~0.11.0"
+  },
+  "dependencies": {
+    "jws": "^3.0.0",
+    "sails-util-mvcsloader": "~0.1.6"
+  }
+}
