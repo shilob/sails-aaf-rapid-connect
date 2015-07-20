@@ -38,9 +38,10 @@ Add the following configuration:
 
 ```js
 auth: {
-      jwsSecret:'', 
-      algo: 'HS256',
-      aaf: {
-        login_url:'' 
-      }
+  jwsSecret:'<The Secret used when registering the AAF Service>', 
+  algo: 'HS256',
+  aaf: {
+    login_url:'<The Unique URL AAF provided after registering>' 
+  }
+}
 ```
