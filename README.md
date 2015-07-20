@@ -33,6 +33,7 @@ module.exports = {
     return res.json({failureReason: reason});
   }
 };
+```
 
 Add the following configuration:
 
