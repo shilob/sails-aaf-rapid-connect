@@ -16,7 +16,10 @@
     "rapid",
     "connect"
   ],
-  "author": "Shilo Banihit",
+  "author": {
+    "name": "Shilo Banihit",
+    "email": "shiloworks@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shilob/sails-aaf-rapid-connect/issues"
