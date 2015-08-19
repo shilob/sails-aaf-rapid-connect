@@ -1,6 +1,6 @@
 {
   "name": "sails-aaf-rapid-connect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides AAF Rapid Connect implementation to your Sails.js application.",
   "main": "index.js",
   "scripts": {
