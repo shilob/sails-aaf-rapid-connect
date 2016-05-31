@@ -20,20 +20,17 @@ module.exports = {
                 }
                 // date and time checking...
                 var nowInSecs = Math.ceil(new Date().getTime() / 1000);
-                // iat must be in the past
-                if (payload.iat > nowInSecs) {
-                  sails.log.debug("Current time:" + nowInSecs);
-                  sails.log.debug("IAT:" + payload.iat);
-                  cb("IAT Invalid.");
-                  return;
-                } else
                 // nbf must be in the past
                 if (payload.nbf >= nowInSecs) {
+                    sails.log.debug("Current time:" + nowInSecs);
+                    sails.log.debug("NBF:" + payload.nbf);
                     cb("NBF Invalid.");
                     return;
                 } else
                 // exp must be in the future
                 if (payload.exp <= nowInSecs) {
+                    sails.log.debug("Current time:" + nowInSecs);
+                    sails.log.debug("EXP:" + payload.exp);
                     cb("Token expired.");
                     return;
                 }
